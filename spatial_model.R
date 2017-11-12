@@ -136,7 +136,7 @@ model_ind_spatial=function(dt,N,N1,Nout,inits,const,m,cart,spat){
 	s=t(sapply(ulocs,function(x) as.vector(dt$locs[dt$locsmap[[x]][1],])))
 	if(cart==0) s=t(apply(s,1,latlontocart))
 	#return(s)
-	distmat=as.matrix(dist(s))  ## 6400 miles is the radius of the earth but we are not multiplying
+	distmat=as.matrix(dist(s))  ## 6400 KM is the radius of the earth but we are not multiplying
 	row.names(distmat)=colnames(distmat)=NULL
 
 	imvec<- apply(distmat,1,myknn,m)
