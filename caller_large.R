@@ -39,7 +39,9 @@ pftgrps[[4]]=c("PFT12","PFT13","PFT14")
 
 # note the modest change in map_plotter
 settings=expand.grid(c("sla","lnm","lpm"),c("pft","superpft","global"),c(1,0))
-i=as.numeric(Sys.getenv('SGE_TASK_ID'))
+#i=as.numeric(Sys.getenv('SGE_TASK_ID'))
+
+i=1 ### run this for i =1, 2, 3, ..., 18 for all the runs
 trait=as.character(settings[i,1])
 level=as.character(settings[i,2])
 spat=as.numeric(settings[i,3])
@@ -52,7 +54,7 @@ mybarplot(trait)
 # main("sla",maindatafile,outpct,model,"superpft",spat,inits,const,N,N1,cart,m,Nout)
 # main("sla",maindatafile,outpct,model,"global",spat,inits,const,N,N1,cart,m,Nout)
 # mybarplot("sla")
-# 
+#  
 # main("lnm",maindatafile,outpct,model,"pft",spat,inits,const,N,N1,cart,m,Nout)
 # main("lnm",maindatafile,outpct,model,"superpft",spat,inits,const,N,N1,cart,m,Nout)
 # main("lnm",maindatafile,outpct,model,"global",spat,inits,const,N,N1,cart,m,Nout)
