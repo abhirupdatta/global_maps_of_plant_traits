@@ -6,4 +6,5 @@ Main datafile: try30_pred6.csv
 
 Main code to run the cateogorical and spatial models: caller_large.R
 
-Before running the code create three folders named sla, lnm and lpm within the folder where you've downloaded these files. 
+The output files containing the predictions for the best model (spatial model with 14 PFTs) are provided in the respective trait folders. 
+

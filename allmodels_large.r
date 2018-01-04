@@ -457,4 +457,3 @@ map_plotter=function(tab,figname,title,colname,at,palette=terrain.colors,weights
   dev.off()
   
 }
-
